@@ -1,4 +1,4 @@
 openmrs-module-reportingvariables
 =================================
 
-gather a variable report to be later exported
+gather variables' report to be later exported into csv
