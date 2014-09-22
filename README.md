@@ -1,4 +1,4 @@
-openmrs-module-reportingvariables
-=================================
+openmrs-module-ppr
+==================
 
-gather variables' report to be later exported into csv
+Weekly reporting module which will help to automatically generate reports on PPR indicators

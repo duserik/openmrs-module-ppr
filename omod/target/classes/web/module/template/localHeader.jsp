@@ -5,14 +5,14 @@
 				code="admin.title.short" /></a></li>
 
 	<li
-		<c:if test='<%= request.getRequestURI().contains("/manage") %>'>class="active"</c:if>>
+		<c:if test='<%= request.getRequestURI().contains("/ppr") %>'>class="active"</c:if>>
 		<a
-		href="${pageContext.request.contextPath}/module/reportingvariables/manage.form"><spring:message
-				code="reportingvariables.manage" /></a>
+		href="${pageContext.request.contextPath}/module/ppr/ppr.form"><spring:message
+				code="ppr.report" /></a>
 	</li>
 	
 	<!-- Add further links here -->
 </ul>
 <h2>
-	<spring:message code="reportingvariables.title" />
+	<spring:message code="ppr.title" />
 </h2>
