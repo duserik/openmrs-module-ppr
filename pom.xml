@@ -4,7 +4,7 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>ppr</artifactId>
-	<version>1.1-SNAPSHOT</version>
+	<version>1.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>PPR</name>
 	<description>Weekly reporting module which will help to automatically generate reports on PPR indicators</description>

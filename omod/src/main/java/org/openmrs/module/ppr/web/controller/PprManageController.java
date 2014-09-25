@@ -31,7 +31,7 @@ import org.openmrs.Obs;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.ppr.Constants;
 import org.openmrs.module.ppr.Ppr;
-import org.openmrs.module.ppr.api.PprService;
+import org.openmrs.module.ppr.service.PprService;
 import org.openmrs.module.ppr.utils.Utils;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -159,12 +159,16 @@ public class PprManageController {
 		Collection<Encounter> clientSeenByNurseFemaleAdultList = service.clientSeenByNurse(startDate, endDate, "F", Constants.ADULT);
 		Collection<Encounter> clientSeenByNurseMalePedList = service.clientSeenByNurse(startDate, endDate, "M", Constants.PEDIATRIC);
 		Collection<Encounter> clientSeenByNurseFemalePedList = service.clientSeenByNurse(startDate, endDate, "F", Constants.PEDIATRIC);
+		System.out.println("Client seen by Nurse details: ======================== " +clientSeenByNurseMaleAdultList.size() + " - " + clientSeenByNurseFemaleAdultList.size()
+				+ " - " + clientSeenByNurseMalePedList.size() + " - " + clientSeenByNurseFemalePedList.size());
 
 		//Clients seen by Physician Details
 		Collection<Encounter> clientSeenByPhysicianMaleAdultList = service.clientSeenByPhysician(startDate, endDate, "M", Constants.ADULT);
 		Collection<Encounter> clientSeenByPhysicianFemaleAdultList = service.clientSeenByPhysician(startDate, endDate, "F", Constants.ADULT);
 		Collection<Encounter> clientSeenByPhysicianMalePedList = service.clientSeenByPhysician(startDate, endDate, "M", Constants.PEDIATRIC);
 		Collection<Encounter> clientSeenByPhysicianFemalePedList = service.clientSeenByPhysician(startDate, endDate, "F", Constants.PEDIATRIC);
+		System.out.println("Client seen by Physician details: ======================== " + clientSeenByPhysicianMaleAdultList.size() + " - " + clientSeenByPhysicianFemaleAdultList.size()
+				+" - " + clientSeenByPhysicianMalePedList.size() + " - " + clientSeenByPhysicianFemalePedList.size());
 
 		//Missed Appointments Details
 		Collection<Object[]> missedAppointmentMaleAdultList = service.missedAppointment(startDate, endDate, "M", Constants.ADULT);

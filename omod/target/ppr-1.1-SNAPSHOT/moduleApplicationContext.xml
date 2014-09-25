@@ -17,16 +17,16 @@
 	<bean parent="serviceContext">
 		<property name="moduleService">
 			<list>
-				<value>org.openmrs.module.ppr.api.PprService</value>
+				<value>org.openmrs.module.ppr.service.PprService</value>
 				<bean
 					class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
 					<property name="transactionManager">
 						<ref bean="transactionManager" />
 					</property>
 					<property name="target">
-						<bean class="org.openmrs.module.ppr.api.impl.PprServiceImpl">
+						<bean class="org.openmrs.module.ppr.service.impl.PprServiceImpl">
 							<property name="dao">
-								<bean class="org.openmrs.module.ppr.api.db.hibernate.HibernatePprDAO">
+								<bean class="org.openmrs.module.ppr.db.hibernate.HibernatePprDAO">
 									<property name="sessionFactory">
 										<ref bean="sessionFactory" />
 									</property>
