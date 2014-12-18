@@ -91,6 +91,56 @@ End date: <input type="text" name="endDate" onfocus="showCalendar(this)" size="1
 	
 	<tr>
 		<td>2</td>
+		<td><b>Total Clients who Missed their Appointments</b></td>
+		<td class="indicator" colspan="8"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Adult - Male</td>
+		<td>${missedAppointmentMaleAdult.indicatorMonday}</td>
+		<td>${missedAppointmentMaleAdult.indicatorTuesday}</td>
+		<td>${missedAppointmentMaleAdult.indictorWednesday}</td>
+		<td>${missedAppointmentMaleAdult.indicatorThursday}</td>
+		<td>${missedAppointmentMaleAdult.indicatorFriday}</td>
+		<td>${missedAppointmentMaleAdult.indicatorSuturday}</td>
+		<td>${missedAppointmentMaleAdult.indicatorMonday + missedAppointmentMaleAdult.indicatorTuesday + missedAppointmentMaleAdult.indictorWednesday + missedAppointmentMaleAdult.indicatorThursday + missedAppointmentMaleAdult.indicatorFriday + missedAppointmentMaleAdult.indicatorSuturday}</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Adult - Female</td>
+		<td>${missedAppointmentFemaleAdult.indicatorMonday}</td>
+		<td>${missedAppointmentFemaleAdult.indicatorTuesday}</td>
+		<td>${missedAppointmentFemaleAdult.indictorWednesday}</td>
+		<td>${missedAppointmentFemaleAdult.indicatorThursday}</td>
+		<td>${missedAppointmentFemaleAdult.indicatorFriday}</td>
+		<td>${missedAppointmentFemaleAdult.indicatorSuturday}</td>
+		<td>${missedAppointmentFemaleAdult.indicatorMonday + missedAppointmentFemaleAdult.indicatorTuesday + missedAppointmentFemaleAdult.indictorWednesday + missedAppointmentFemaleAdult.indicatorThursday + missedAppointmentFemaleAdult.indicatorFriday + missedAppointmentFemaleAdult.indicatorSuturday}</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Pediatric - Male</td>
+		<td>${missedAppointmentMalePed.indicatorMonday}</td>
+		<td>${missedAppointmentMalePed.indicatorTuesday}</td>
+		<td>${missedAppointmentMalePed.indictorWednesday}</td>
+		<td>${missedAppointmentMalePed.indicatorThursday}</td>
+		<td>${missedAppointmentMalePed.indicatorFriday}</td>
+		<td>${missedAppointmentMalePed.indicatorSuturday}</td>
+		<td>${missedAppointmentMalePed.indicatorMonday + missedAppointmentMalePed.indicatorTuesday + missedAppointmentMalePed.indictorWednesday + missedAppointmentMalePed.indicatorThursday + missedAppointmentMalePed.indicatorFriday + missedAppointmentMalePed.indicatorSuturday}</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Pediatric - Female</td>
+		<td>${missedAppointmentFemalePed.indicatorMonday}</td>
+		<td>${missedAppointmentFemalePed.indicatorTuesday}</td>
+		<td>${missedAppointmentFemalePed.indictorWednesday}</td>
+		<td>${missedAppointmentFemalePed.indicatorThursday}</td>
+		<td>${missedAppointmentFemalePed.indicatorFriday}</td>
+		<td>${missedAppointmentFemalePed.indicatorSuturday}</td>
+		<td>${missedAppointmentFemalePed.indicatorMonday + missedAppointmentFemalePed.indicatorTuesday + missedAppointmentFemalePed.indictorWednesday + missedAppointmentFemalePed.indicatorThursday + missedAppointmentFemalePed.indicatorFriday + missedAppointmentFemalePed.indicatorSuturday}</td>
+	</tr>
+	
+	<tr>
+		<td>3</td>
 		<td><b>Total Clients who were Followed-up</b></td>
 		<td class="indicator" colspan="8"></td>
 	</tr>
@@ -140,7 +190,7 @@ End date: <input type="text" name="endDate" onfocus="showCalendar(this)" size="1
 	</tr>
 	
 	<tr>
-		<td>3</td>
+		<td>4</td>
 		<td><b>Total Existing Clients Seen</b></td>
 		<td class="indicator" colspan="8"></td>
 	</tr>
@@ -191,7 +241,7 @@ End date: <input type="text" name="endDate" onfocus="showCalendar(this)" size="1
 	</tr>
 	
 	<tr>
-		<td>4</td>
+		<td>5</td>
 		<td><b>Total New Clients Seen</b></td>
 		<td class="indicator" colspan="8"></td>
 	</tr>
@@ -241,7 +291,107 @@ End date: <input type="text" name="endDate" onfocus="showCalendar(this)" size="1
 	</tr>
 	
 	<tr>
-		<td>5</td>
+		<td>6</td>
+		<td><b>Total Clients seen by Physician/C.O.</b></td>
+		<td class="indicator" colspan="8"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Adult - Male</td>
+		<td>${clientSeenByPhysicianMaleAdult.indicatorMonday}</td>
+		<td>${clientSeenByPhysicianMaleAdult.indicatorTuesday}</td>
+		<td>${clientSeenByPhysicianMaleAdult.indictorWednesday}</td>
+		<td>${clientSeenByPhysicianMaleAdult.indicatorThursday}</td>
+		<td>${clientSeenByPhysicianMaleAdult.indicatorFriday}</td>
+		<td>${clientSeenByPhysicianMaleAdult.indicatorSuturday}</td>
+		<td>${clientSeenByPhysicianMaleAdult.indicatorMonday + clientSeenByPhysicianMaleAdult.indicatorTuesday + clientSeenByPhysicianMaleAdult.indictorWednesday + clientSeenByPhysicianMaleAdult.indicatorThursday + clientSeenByPhysicianMaleAdult.indicatorFriday + clientSeenByPhysicianMaleAdult.indicatorSuturday}</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Adult - Female</td>
+		<td>${clientSeenByPhysicianFemaleAdult.indicatorMonday}</td>
+		<td>${clientSeenByPhysicianFemaleAdult.indicatorTuesday}</td>
+		<td>${clientSeenByPhysicianFemaleAdult.indictorWednesday}</td>
+		<td>${clientSeenByPhysicianFemaleAdult.indicatorThursday}</td>
+		<td>${clientSeenByPhysicianFemaleAdult.indicatorFriday}</td>
+		<td>${clientSeenByPhysicianFemaleAdult.indicatorSuturday}</td>
+		<td>${clientSeenByPhysicianFemaleAdult.indicatorMonday + clientSeenByPhysicianFemaleAdult.indicatorTuesday + clientSeenByPhysicianFemaleAdult.indictorWednesday + clientSeenByPhysicianFemaleAdult.indicatorThursday + clientSeenByPhysicianFemaleAdult.indicatorFriday + clientSeenByPhysicianFemaleAdult.indicatorSuturday}</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Pediatric - Male</td>
+		<td>${clientSeenByPhysicianMalePed.indicatorMonday}</td>
+		<td>${clientSeenByPhysicianMalePed.indicatorTuesday}</td>
+		<td>${clientSeenByPhysicianMalePed.indictorWednesday}</td>
+		<td>${clientSeenByPhysicianMalePed.indicatorThursday}</td>
+		<td>${clientSeenByPhysicianMalePed.indicatorFriday}</td>
+		<td>${clientSeenByPhysicianMalePed.indicatorSuturday}</td>
+		<td>${clientSeenByPhysicianMalePed.indicatorMonday + clientSeenByPhysicianMalePed.indicatorTuesday + clientSeenByPhysicianMalePed.indictorWednesday + clientSeenByPhysicianMalePed.indicatorThursday + clientSeenByPhysicianMalePed.indicatorFriday + clientSeenByPhysicianMalePed.indicatorSuturday}</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Pediatric - Female</td>
+		<td>${clientSeenByPhysicianFemalePed.indicatorMonday}</td>
+		<td>${clientSeenByPhysicianFemalePed.indicatorTuesday}</td>
+		<td>${clientSeenByPhysicianFemalePed.indictorWednesday}</td>
+		<td>${clientSeenByPhysicianFemalePed.indicatorThursday}</td>
+		<td>${clientSeenByPhysicianFemalePed.indicatorFriday}</td>
+		<td>${clientSeenByPhysicianFemalePed.indicatorSuturday}</td>
+		<td>${clientSeenByPhysicianFemalePed.indicatorMonday + clientSeenByPhysicianFemalePed.indicatorTuesday + clientSeenByPhysicianFemalePed.indictorWednesday + clientSeenByPhysicianFemalePed.indicatorThursday + clientSeenByPhysicianFemalePed.indicatorFriday + clientSeenByPhysicianFemalePed.indicatorSuturday}</td>
+	</tr>
+	
+	<tr>
+		<td>7</td>
+		<td><b>Total Clients seen by Nurse</b></td>
+		<td class="indicator" colspan="8"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Adult - Male</td>
+		<td>${clientSeenByNurseMaleAdult.indicatorMonday}</td>
+		<td>${clientSeenByNurseMaleAdult.indicatorTuesday}</td>
+		<td>${clientSeenByNurseMaleAdult.indictorWednesday}</td>
+		<td>${clientSeenByNurseMaleAdult.indicatorThursday}</td>
+		<td>${clientSeenByNurseMaleAdult.indicatorFriday}</td>
+		<td>${clientSeenByNurseMaleAdult.indicatorSuturday}</td>
+		<td>${clientSeenByNurseMaleAdult.indicatorMonday + clientSeenByNurseMaleAdult.indicatorTuesday + clientSeenByNurseMaleAdult.indictorWednesday + clientSeenByNurseMaleAdult.indicatorThursday + clientSeenByNurseMaleAdult.indicatorFriday + clientSeenByNurseMaleAdult.indicatorSuturday}</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Adult - Female</td>
+		<td>${clientSeenByNurseFemaleAdult.indicatorMonday}</td>
+		<td>${clientSeenByNurseFemaleAdult.indicatorTuesday}</td>
+		<td>${clientSeenByNurseFemaleAdult.indictorWednesday}</td>
+		<td>${clientSeenByNurseFemaleAdult.indicatorThursday}</td>
+		<td>${clientSeenByNurseFemaleAdult.indicatorFriday}</td>
+		<td>${clientSeenByNurseFemaleAdult.indicatorSuturday}</td>
+		<td>${clientSeenByNurseFemaleAdult.indicatorMonday + clientSeenByNurseFemaleAdult.indicatorTuesday + clientSeenByNurseFemaleAdult.indictorWednesday + clientSeenByNurseFemaleAdult.indicatorThursday + clientSeenByNurseFemaleAdult.indicatorFriday + clientSeenByNurseFemaleAdult.indicatorSuturday}</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Pediatric - Male</td>
+		<td>${clientSeenByNurseMalePed.indicatorMonday}</td>
+		<td>${clientSeenByNurseMalePed.indicatorTuesday}</td>
+		<td>${clientSeenByNurseMalePed.indictorWednesday}</td>
+		<td>${clientSeenByNurseMalePed.indicatorThursday}</td>
+		<td>${clientSeenByNurseMalePed.indicatorFriday}</td>
+		<td>${clientSeenByNurseMalePed.indicatorSuturday}</td>
+		<td>${clientSeenByNurseMalePed.indicatorMonday + clientSeenByNurseMalePed.indicatorTuesday + clientSeenByNurseMalePed.indictorWednesday + clientSeenByNurseMalePed.indicatorThursday + clientSeenByNurseMalePed.indicatorFriday + clientSeenByNurseMalePed.indicatorSuturday}</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Pediatric - Female</td>
+		<td>${clientSeenByNurseFemalePed.indicatorMonday}</td>
+		<td>${clientSeenByNurseFemalePed.indicatorTuesday}</td>
+		<td>${clientSeenByNurseFemalePed.indictorWednesday}</td>
+		<td>${clientSeenByNurseFemalePed.indicatorThursday}</td>
+		<td>${clientSeenByNurseFemalePed.indicatorFriday}</td>
+		<td>${clientSeenByNurseFemalePed.indicatorSuturday}</td>
+		<td>${clientSeenByNurseFemalePed.indicatorMonday + clientSeenByNurseFemalePed.indicatorTuesday + clientSeenByNurseFemalePed.indictorWednesday + clientSeenByNurseFemalePed.indicatorThursday + clientSeenByNurseFemalePed.indicatorFriday + clientSeenByNurseFemalePed.indicatorSuturday}</td>
+	</tr>
+	
+	<tr>
+		<td>8</td>
 		<td><b>Total Follow-up CD4 Tests Conducted</b></td>
 		<td class="indicator" colspan="8"></td>
 	</tr>
@@ -291,8 +441,8 @@ End date: <input type="text" name="endDate" onfocus="showCalendar(this)" size="1
 	</tr>
 	
 	<tr>
-		<td>6</td>
-		<td><b>Total Initial CD4 Tests Conducted</b></td>
+		<td>9</td>
+		<td><b>Total Initial (Baseline) CD4 Tests Conducted</b></td>
 		<td class="indicator" colspan="8"></td>
 	</tr>
 	<tr>
@@ -341,7 +491,7 @@ End date: <input type="text" name="endDate" onfocus="showCalendar(this)" size="1
 	</tr>
 	
 	<tr>
-		<td>7</td>
+		<td>10</td>
 		<td><b>Total Clients initiated on ART</b></td>
 		<td class="indicator" colspan="8"></td>
 	</tr>
@@ -391,7 +541,7 @@ End date: <input type="text" name="endDate" onfocus="showCalendar(this)" size="1
 	</tr>
 	
 	<tr>
-		<td>8</td>
+		<td>11</td>
 		<td><b>Total number of deceased clients not on ART</b></td>
 		<td class="indicator" colspan="8"></td>
 	</tr>
@@ -441,7 +591,7 @@ End date: <input type="text" name="endDate" onfocus="showCalendar(this)" size="1
 	</tr>
 	
 	<tr>
-		<td>9</td>
+		<td>12</td>
 		<td><b>Total number of deceased ART clients</b></td>
 		<td class="indicator" colspan="8"></td>
 	</tr>
@@ -488,150 +638,6 @@ End date: <input type="text" name="endDate" onfocus="showCalendar(this)" size="1
 		<td>${deceasedARTClientsFemalePed.indicatorFriday}</td>
 		<td>${deceasedARTClientsFemalePed.indicatorSuturday}</td>
 		<td>${deceasedARTClientsFemalePed.indicatorMonday + deceasedARTClientsFemalePed.indicatorTuesday + deceasedARTClientsFemalePed.indictorWednesday + deceasedARTClientsFemalePed.indicatorThursday + deceasedARTClientsFemalePed.indicatorFriday + deceasedARTClientsFemalePed.indicatorSuturday}</td>
-	</tr>
-		<td>10</td>
-		<td><b>Total number of clients seen by Nurses</b></td>
-		<td class="indicator" colspan="8"></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Adult - Male</td>
-		<td>${clientSeenByNurseMaleAdult.indicatorMonday}</td>
-		<td>${clientSeenByNurseMaleAdult.indicatorTuesday}</td>
-		<td>${clientSeenByNurseMaleAdult.indictorWednesday}</td>
-		<td>${clientSeenByNurseMaleAdult.indicatorThursday}</td>
-		<td>${clientSeenByNurseMaleAdult.indicatorFriday}</td>
-		<td>${clientSeenByNurseMaleAdult.indicatorSuturday}</td>
-		<td>${clientSeenByNurseMaleAdult.indicatorMonday + clientSeenByNurseMaleAdult.indicatorTuesday + clientSeenByNurseMaleAdult.indictorWednesday + clientSeenByNurseMaleAdult.indicatorThursday + clientSeenByNurseMaleAdult.indicatorFriday + clientSeenByNurseMaleAdult.indicatorSuturday}</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Adult - Female</td>
-		<td>${clientSeenByNurseFemaleAdult.indicatorMonday}</td>
-		<td>${clientSeenByNurseFemaleAdult.indicatorTuesday}</td>
-		<td>${clientSeenByNurseFemaleAdult.indictorWednesday}</td>
-		<td>${clientSeenByNurseFemaleAdult.indicatorThursday}</td>
-		<td>${clientSeenByNurseFemaleAdult.indicatorFriday}</td>
-		<td>${clientSeenByNurseFemaleAdult.indicatorSuturday}</td>
-		<td>${clientSeenByNurseFemaleAdult.indicatorMonday + clientSeenByNurseFemaleAdult.indicatorTuesday + clientSeenByNurseFemaleAdult.indictorWednesday + clientSeenByNurseFemaleAdult.indicatorThursday + clientSeenByNurseFemaleAdult.indicatorFriday + clientSeenByNurseFemaleAdult.indicatorSuturday}</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Pediatric - Male</td>
-		<td>${clientSeenByNurseMalePed.indicatorMonday}</td>
-		<td>${clientSeenByNurseMalePed.indicatorTuesday}</td>
-		<td>${clientSeenByNurseMalePed.indictorWednesday}</td>
-		<td>${clientSeenByNurseMalePed.indicatorThursday}</td>
-		<td>${clientSeenByNurseMalePed.indicatorFriday}</td>
-		<td>${clientSeenByNurseMalePed.indicatorSuturday}</td>
-		<td>${clientSeenByNurseMalePed.indicatorMonday + clientSeenByNurseMalePed.indicatorTuesday + clientSeenByNurseMalePed.indictorWednesday + clientSeenByNurseMalePed.indicatorThursday + clientSeenByNurseMalePed.indicatorFriday + clientSeenByNurseMalePed.indicatorSuturday}</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Pediatric - Female</td>
-		<td>${clientSeenByNurseFemalePed.indicatorMonday}</td>
-		<td>${clientSeenByNurseFemalePed.indicatorTuesday}</td>
-		<td>${clientSeenByNurseFemalePed.indictorWednesday}</td>
-		<td>${clientSeenByNurseFemalePed.indicatorThursday}</td>
-		<td>${clientSeenByNurseFemalePed.indicatorFriday}</td>
-		<td>${clientSeenByNurseFemalePed.indicatorSuturday}</td>
-		<td>${clientSeenByNurseFemalePed.indicatorMonday + clientSeenByNurseFemalePed.indicatorTuesday + clientSeenByNurseFemalePed.indictorWednesday + clientSeenByNurseFemalePed.indicatorThursday + clientSeenByNurseFemalePed.indicatorFriday + clientSeenByNurseFemalePed.indicatorSuturday}</td>
-	</tr>
-		<td>11</td>
-		<td><b>Total number of clients seen by Phyisicians</b></td>
-		<td class="indicator" colspan="8"></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Adult - Male</td>
-		<td>${clientSeenByPhysicianMaleAdult.indicatorMonday}</td>
-		<td>${clientSeenByPhysicianMaleAdult.indicatorTuesday}</td>
-		<td>${clientSeenByPhysicianMaleAdult.indictorWednesday}</td>
-		<td>${clientSeenByPhysicianMaleAdult.indicatorThursday}</td>
-		<td>${clientSeenByPhysicianMaleAdult.indicatorFriday}</td>
-		<td>${clientSeenByPhysicianMaleAdult.indicatorSuturday}</td>
-		<td>${clientSeenByPhysicianMaleAdult.indicatorMonday + clientSeenByPhysicianMaleAdult.indicatorTuesday + clientSeenByPhysicianMaleAdult.indictorWednesday + clientSeenByPhysicianMaleAdult.indicatorThursday + clientSeenByPhysicianMaleAdult.indicatorFriday + clientSeenByPhysicianMaleAdult.indicatorSuturday}</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Adult - Female</td>
-		<td>${clientSeenByPhysicianFemaleAdult.indicatorMonday}</td>
-		<td>${clientSeenByPhysicianFemaleAdult.indicatorTuesday}</td>
-		<td>${clientSeenByPhysicianFemaleAdult.indictorWednesday}</td>
-		<td>${clientSeenByPhysicianFemaleAdult.indicatorThursday}</td>
-		<td>${clientSeenByPhysicianFemaleAdult.indicatorFriday}</td>
-		<td>${clientSeenByPhysicianFemaleAdult.indicatorSuturday}</td>
-		<td>${clientSeenByPhysicianFemaleAdult.indicatorMonday + clientSeenByPhysicianFemaleAdult.indicatorTuesday + clientSeenByPhysicianFemaleAdult.indictorWednesday + clientSeenByPhysicianFemaleAdult.indicatorThursday + clientSeenByPhysicianFemaleAdult.indicatorFriday + clientSeenByPhysicianFemaleAdult.indicatorSuturday}</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Pediatric - Male</td>
-		<td>${clientSeenByPhysicianMalePed.indicatorMonday}</td>
-		<td>${clientSeenByPhysicianMalePed.indicatorTuesday}</td>
-		<td>${clientSeenByPhysicianMalePed.indictorWednesday}</td>
-		<td>${clientSeenByPhysicianMalePed.indicatorThursday}</td>
-		<td>${clientSeenByPhysicianMalePed.indicatorFriday}</td>
-		<td>${clientSeenByPhysicianMalePed.indicatorSuturday}</td>
-		<td>${clientSeenByPhysicianMalePed.indicatorMonday + clientSeenByPhysicianMalePed.indicatorTuesday + clientSeenByPhysicianMalePed.indictorWednesday + clientSeenByPhysicianMalePed.indicatorThursday + clientSeenByPhysicianMalePed.indicatorFriday + clientSeenByPhysicianMalePed.indicatorSuturday}</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Pediatric - Female</td>
-		<td>${clientSeenByPhysicianFemalePed.indicatorMonday}</td>
-		<td>${clientSeenByPhysicianFemalePed.indicatorTuesday}</td>
-		<td>${clientSeenByPhysicianFemalePed.indictorWednesday}</td>
-		<td>${clientSeenByPhysicianFemalePed.indicatorThursday}</td>
-		<td>${clientSeenByPhysicianFemalePed.indicatorFriday}</td>
-		<td>${clientSeenByPhysicianFemalePed.indicatorSuturday}</td>
-		<td>${clientSeenByPhysicianFemalePed.indicatorMonday + clientSeenByPhysicianFemalePed.indicatorTuesday + clientSeenByPhysicianFemalePed.indictorWednesday + clientSeenByPhysicianFemalePed.indicatorThursday + clientSeenByPhysicianFemalePed.indicatorFriday + clientSeenByPhysicianFemalePed.indicatorSuturday}</td>
-	</tr>
-		<td>12</td>
-		<td><b>Total number of clients who missed their appointments</b></td>
-		<td class="indicator" colspan="8"></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Adult - Male</td>
-		<td>${missedAppointmentMaleAdult.indicatorMonday}</td>
-		<td>${missedAppointmentMaleAdult.indicatorTuesday}</td>
-		<td>${missedAppointmentMaleAdult.indictorWednesday}</td>
-		<td>${missedAppointmentMaleAdult.indicatorThursday}</td>
-		<td>${missedAppointmentMaleAdult.indicatorFriday}</td>
-		<td>${missedAppointmentMaleAdult.indicatorSuturday}</td>
-		<td>${missedAppointmentMaleAdult.indicatorMonday + missedAppointmentMaleAdult.indicatorTuesday + missedAppointmentMaleAdult.indictorWednesday + missedAppointmentMaleAdult.indicatorThursday + missedAppointmentMaleAdult.indicatorFriday + missedAppointmentMaleAdult.indicatorSuturday}</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Adult - Female</td>
-		<td>${missedAppointmentFemaleAdult.indicatorMonday}</td>
-		<td>${missedAppointmentFemaleAdult.indicatorTuesday}</td>
-		<td>${missedAppointmentFemaleAdult.indictorWednesday}</td>
-		<td>${missedAppointmentFemaleAdult.indicatorThursday}</td>
-		<td>${missedAppointmentFemaleAdult.indicatorFriday}</td>
-		<td>${missedAppointmentFemaleAdult.indicatorSuturday}</td>
-		<td>${missedAppointmentFemaleAdult.indicatorMonday + missedAppointmentFemaleAdult.indicatorTuesday + missedAppointmentFemaleAdult.indictorWednesday + missedAppointmentFemaleAdult.indicatorThursday + missedAppointmentFemaleAdult.indicatorFriday + missedAppointmentFemaleAdult.indicatorSuturday}</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Pediatric - Male</td>
-		<td>${missedAppointmentMalePed.indicatorMonday}</td>
-		<td>${missedAppointmentMalePed.indicatorTuesday}</td>
-		<td>${missedAppointmentMalePed.indictorWednesday}</td>
-		<td>${missedAppointmentMalePed.indicatorThursday}</td>
-		<td>${missedAppointmentMalePed.indicatorFriday}</td>
-		<td>${missedAppointmentMalePed.indicatorSuturday}</td>
-		<td>${missedAppointmentMalePed.indicatorMonday + missedAppointmentMalePed.indicatorTuesday + missedAppointmentMalePed.indictorWednesday + missedAppointmentMalePed.indicatorThursday + missedAppointmentMalePed.indicatorFriday + missedAppointmentMalePed.indicatorSuturday}</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Pediatric - Female</td>
-		<td>${missedAppointmentFemalePed.indicatorMonday}</td>
-		<td>${missedAppointmentFemalePed.indicatorTuesday}</td>
-		<td>${missedAppointmentFemalePed.indictorWednesday}</td>
-		<td>${missedAppointmentFemalePed.indicatorThursday}</td>
-		<td>${missedAppointmentFemalePed.indicatorFriday}</td>
-		<td>${missedAppointmentFemalePed.indicatorSuturday}</td>
-		<td>${missedAppointmentFemalePed.indicatorMonday + missedAppointmentFemalePed.indicatorTuesday + missedAppointmentFemalePed.indictorWednesday + missedAppointmentFemalePed.indicatorThursday + missedAppointmentFemalePed.indicatorFriday + missedAppointmentFemalePed.indicatorSuturday}</td>
 	</tr>
 
 </table>

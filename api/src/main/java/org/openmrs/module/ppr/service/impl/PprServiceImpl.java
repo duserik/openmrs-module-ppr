@@ -51,7 +51,7 @@ public class PprServiceImpl extends BaseOpenmrsService implements PprService {
     }
 
     @Override
-    public Collection<Encounter> followupVisit(String startDate, String endDate, String gender, String ageRange){
+    public Collection<Object[]> followupVisit(String startDate, String endDate, String gender, String ageRange){
         return dao.followupVisit(startDate, endDate, gender, ageRange);
     }
 

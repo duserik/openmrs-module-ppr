@@ -14,6 +14,7 @@
 package org.openmrs.module.ppr.db.hibernate;
 
 import java.util.Collection;
+import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -76,29 +77,31 @@ public class HibernatePprDAO implements PprDAO {
 	}
 
     @Override
-    public Collection<Encounter> followupVisit(String startDate, String endDate, String gender, String ageRange) {
+    public Collection<Object[]> followupVisit(String startDate, String endDate, String gender, String ageRange) {
 
 		StringBuffer sb = new StringBuffer();
 
-		sb.append("SELECT e.* FROM encounter e INNER JOIN person p ON e.patient_id = p.person_id WHERE encounter_type = 2");
-
-		if(startDate != null && !startDate.equals(""))
-			sb.append(" AND e.encounter_datetime >= '" + startDate + "' ");
-
-		if(endDate != null && !endDate.equals(""))
-			sb.append(" AND e.encounter_datetime <= '" + endDate + "' ");
-
-		if(gender != null && !gender.equals(""))
-			sb.append(" AND p.gender = '" + gender + "' ");
+		sb.append("SELECT app.patient_id, app.appointment_date FROM appointment app " +
+				"INNER JOIN patient pat ON app.patient_id = pat.patient_id AND pat.voided = 0 " +
+				"INNER JOIN person p ON app.patient_id = p.person_id ");
 
 		if(ageRange != null && !ageRange.equals(""))
 			sb.append(" AND  DATEDIFF('" + endDate	+ "', STR_TO_DATE(p.birthdate, '%Y-%m-%d'))/365 " + ageRange + " ");
+		
+		if(gender != null && !gender.equals(""))
+			sb.append(" AND p.gender = '" + gender + "' ");
+		
+		if(startDate != null && !startDate.equals(""))
+			sb.append(" AND app.appointment_date >= '" + startDate + "' ");
 
-		sb.append(" AND e.voided = 0;");
+		if(endDate != null && !endDate.equals(""))
+			sb.append(" AND app.appointment_date <= '" + endDate + "' ");		
+
+		sb.append(" AND app.voided = 0 AND note != '' GROUP BY app.patient_id;");
 
 		Session session = sessionFactory.getCurrentSession();
 
-		Collection<Encounter> collection = session.createSQLQuery(sb.toString()).addEntity("encounter", Encounter.class).list();
+		Collection<Object[]> collection = session.createSQLQuery(sb.toString()).list();
 
 		return collection;
     }

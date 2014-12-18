@@ -107,10 +107,10 @@ public class PprManageController {
 		Collection<Obs> scheduledVisitFemalePedList = service.scheduledVisit(startDate, endDate, "F", Constants.PEDIATRIC);
 		
 		//Followup clients Details	
-		Collection<Encounter> followupVisitMaleAdultList = service.followupVisit(startDate, endDate, "M", Constants.ADULT);
-		Collection<Encounter> followupVisitFemaleAdultList = service.followupVisit(startDate, endDate, "F", Constants.ADULT);
-		Collection<Encounter> followupVisitMalePedList = service.followupVisit(startDate, endDate, "M", Constants.PEDIATRIC);
-		Collection<Encounter> followupVisitFemalePedList = service.followupVisit(startDate, endDate, "F", Constants.PEDIATRIC);
+		Collection<Object[]> followupVisitMaleAdultList = service.followupVisit(startDate, endDate, "M", Constants.ADULT);
+		Collection<Object[]> followupVisitFemaleAdultList = service.followupVisit(startDate, endDate, "F", Constants.ADULT);
+		Collection<Object[]> followupVisitMalePedList = service.followupVisit(startDate, endDate, "M", Constants.PEDIATRIC);
+		Collection<Object[]> followupVisitFemalePedList = service.followupVisit(startDate, endDate, "F", Constants.PEDIATRIC);
 		
 		//Total clients seen Details	
 		Collection<Encounter> totalClienSeenMaleAdultList = service.totalClienSeen(startDate, endDate, "M", Constants.ADULT);
@@ -187,10 +187,10 @@ public class PprManageController {
 		Ppr scheduledVisitFemalePed = Utils.indicatorsPerDays(startDate, endDate, scheduledVisitFemalePedList, null, null);		
 		
 		//Followup clients aggragated
-		Ppr followupVisitMaleAdult = Utils.indicatorsPerDays(startDate, endDate, null, followupVisitMaleAdultList, null);
-		Ppr followupVisitFemaleAdult = Utils.indicatorsPerDays(startDate, endDate, null, followupVisitFemaleAdultList, null);
-		Ppr followupVisitMalePed = Utils.indicatorsPerDays(startDate, endDate, null, followupVisitMalePedList, null);
-		Ppr followupVisitFemalePed = Utils.indicatorsPerDays(startDate, endDate, null, followupVisitFemalePedList, null);
+		Ppr followupVisitMaleAdult = Utils.indicatorsPerDays(startDate, endDate, null, null, followupVisitMaleAdultList);
+		Ppr followupVisitFemaleAdult = Utils.indicatorsPerDays(startDate, endDate, null, null, followupVisitFemaleAdultList);
+		Ppr followupVisitMalePed = Utils.indicatorsPerDays(startDate, endDate, null, null, followupVisitMalePedList);
+		Ppr followupVisitFemalePed = Utils.indicatorsPerDays(startDate, endDate, null, null, followupVisitFemalePedList);
 		log.info("Followup Visit: " + followupVisitMaleAdult + " - " + followupVisitFemaleAdult + " - " + followupVisitMalePed + " - " + followupVisitFemalePed);	
 		
 		//Total clients seen aggragated

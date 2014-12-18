@@ -33,7 +33,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public interface PprService extends OpenmrsService {	
 	public Collection<Obs> scheduledVisit(String startDate, String endDate, String gender, String ageRange);
-	public Collection<Encounter> followupVisit(String startDate, String endDate, String gender, String ageRange);
+	public Collection<Object[]> followupVisit(String startDate, String endDate, String gender, String ageRange);
 	public Collection<Encounter> totalClienSeen(String startDate, String endDate, String gender, String ageRange);
 	public Collection<Encounter> initialVisit(String startDate, String endDate, String gender, String ageRange);
 	public Collection<Object[]> followupCD4Tests(String startDate, String endDate, String gender, String ageRange);

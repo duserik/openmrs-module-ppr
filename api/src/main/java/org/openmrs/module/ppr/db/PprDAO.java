@@ -24,7 +24,7 @@ import org.openmrs.module.ppr.service.PprService;
 public interface PprDAO {	
 	
 	public Collection<Obs> scheduledVisit(String startDate, String endDate, String gender, String ageRange);
-	public Collection<Encounter> followupVisit(String startDate, String endDate, String gender, String ageRange);
+	public Collection<Object[]> followupVisit(String startDate, String endDate, String gender, String ageRange);
 	public Collection<Encounter> totalClienSeen(String startDate, String endDate, String gender, String ageRange);
 	public Collection<Encounter> initialVisit(String startDate, String endDate, String gender, String ageRange);
 	public Collection<Object[]> followupCD4Tests(String startDate, String endDate, String gender, String ageRange);
